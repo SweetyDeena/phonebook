@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h1>Phone Book</h1></center>
+	<center>
+		<table border="3">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<td><input type="text" name="name" id="name"></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Address</th>
+					<td><input type="text" name="address" id="address"></td>
+				</tr>
+				<tr>
+					<th>Phone Number</th>
+					<td><input type="number" name="Phone" id="phone"></td>
+				</tr>
+				
+				<tr id="btna">
+					<td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table border="3" id="show">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Address</th>
+					<th>Phone Number</th>
+					
+				</tr>
+			</thead>
+		</table>
+	</center>
+	
+	<script src="script.js"></script>
+</body>
+</html>
